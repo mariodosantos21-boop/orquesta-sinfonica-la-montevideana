@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+
+
+
+
+nav{
+    background-color: white;
+    div{
+        img{
+
+
+        }
+        h1{
+            font-family: v.$fuente;
+
+        }
+
+        div{
+            ul{
+                li{
+                    font-family: v.$fuente;
+
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
