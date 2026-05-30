@@ -5,7 +5,13 @@
 
 nav{
     background-color: white;
+   
     div{
+        a{
+             transition: transform 0.3s ease;
+
+                  &:hover {
+                   transform: scale(1.05);}
         img{
 
 
@@ -14,10 +20,15 @@ nav{
             font-family: v.$fuente;
 
         }
-
+           }
         div{
+            
             ul{
                 li{
+                    transition: transform 0.3s ease;
+
+                  &:hover {
+                   transform: scale(1.0);}
                     font-family: v.$fuente;
 
                 }

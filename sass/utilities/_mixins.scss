@@ -1,0 +1,18 @@
+
+
+@mixin fondo-animado {
+  background: #042C53;
+  animation: bg-shift 15s ease-in-out infinite alternate;
+}
+
+@keyframes bg-shift {
+  0%   { background-color: #0a3f74; }
+  15%  { background-color: #12406e; }
+  25%  { background-color: #225486; }
+  50%  { background-color: #0b4075; }
+  65%  { background-color: #194066; }
+  75%  { background-color: #062f58; }
+  85%  { background-color: #0b233b; }
+  95%  { background-color: #021e3d; }
+  100% { background-color: #01162c; }
+}
