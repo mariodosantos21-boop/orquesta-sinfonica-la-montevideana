@@ -1,0 +1,68 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins"  as m;
+
+.directores {
+    @include m.fondo-animado;
+    padding:3rem ;
+
+    .directores-heading {
+        
+            color: rgb(243, 237, 237);
+            font-family: v.$fuente;
+            font-size: clamp(2rem, 5vw, 6rem);
+            margin-bottom: 2rem; // espacio entre título y cards
+    }
+
+    .directores-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 3rem;
+    }
+
+    .di-card {
+        display: flex;
+        min-height: 400px;
+        background-color: white;
+        padding: 1rem;
+        border-radius: 15px;
+        gap: 1rem;
+    }
+
+    .di-card img {
+        width: 100%;
+        height: 350px;
+        object-fit: contain;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        h3{
+            color: rgb(0, 0, 0);
+            font-family: v.$fuente;
+            font-size: clamp(1.5rem, 2vw, 3rem);
+            
+
+        }
+       p{
+            color:rgb(0, 0, 0);
+            font-family: v.$fuente;
+            font-size: clamp(0.8rem, 1vw, 2rem);
+    }
+}
+
+@include m.mobile {
+     padding: 3rem 2rem;
+    .directores-grid {
+        grid-template-columns: 1fr;
+        
+    .di-card {
+        flex-direction: column;
+         
+         
+
+           
+    }
+    }
+}
+}

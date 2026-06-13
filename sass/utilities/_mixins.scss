@@ -16,3 +16,9 @@
   95%  { background-color: #021e3d; }
   100% { background-color: #01162c; }
 }
+
+@mixin mobile{
+    @media(min-width:320px) and (max-width:479px){
+        @content;
+    }
+}

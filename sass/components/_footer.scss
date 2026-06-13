@@ -1,5 +1,5 @@
 @use "../utilities/variables" as v;
-
+@use "../utilities/mixins"  as m;
 
 footer {
     
@@ -16,7 +16,9 @@ footer {
                 div {
 
                     h2 {
+                        color: rgb(0, 0, 0);
                         font-family: v.$fuente;
+                     font-size: clamp(0.9rem, 1vw, 1.5rem);
                     }
                 }
             }
@@ -40,5 +42,12 @@ footer {
                 }
             }
         }
+  
     }
+@include m.mobile {
+    .container-footer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 }
